@@ -1,175 +1,279 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adarsh dodamani - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">AD</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
 
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Adarsh R D</h1>
-                    <p class="subtitle">The Creative Mind in the Digital Age</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="primary-btn">Get in Touch</a>
-                        <a href="#projects" class="secondary-btn">View Projects</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <!-- Placeholder for profile image -->
-                    <div class="profile-placeholder"></div>
-                </div>
-            </div>
-        </div>
-    </header>
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
 
-    <main>
-        <section id="projects" class="section projects-section">
-            <div class="container">
-                <h2 class="section-title">ADARSH's Project Vault</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Robotic Arm</h3>
-                            <p>Designed a robotic arm with precise motion control for automated tasks, integrating sensors and microcontrollers. It showcases innovation in industrial automation.</p>
-                            <div class="project-tags">
-                                <span>Technical</span>
-                                <span>Kinematics</span></span>
-                                <span>Sensors</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Mumbai Water Ecosystem</h3>
-                            <p>Comprehensive solution for improving water quality and accessibility for Mumbai residents through smart technology integration.</p>
-                            <div class="project-tags">
-                                <span>Smart City</span>
-                                <span>Infrastructure</span>
-                                <span>Tech</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        <section id="skills" class="section skills-section">
-            <div class="container">
-                <h2 class="section-title">Technical Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>Programming</h3>
-                        <ul>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Web Development</h3>
-                        <ul>
-                            <li>React.js</li>
-                            <li>Node.js</li>
-                            <li>Full Stack</li>
-                        </ul>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Core CS</h3>
-                        <ul>
-                            <li>Data Structures</li>
-                            <li>Algorithms</li>
-                            <li>Problem Solving</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-             <div class="container">
-                <h2 class="section-title">ADARSH's Project Vault</h2>
-                    <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>sewege water management</h3>
-                            <p>Sewage water management ensures safe treatment and disposal of wastewater to protect health and the environment. It transforms waste into a resource, enabling reuse for a sustainable future.</p>
-                            <div class="project-tags">
-                                <span>safe</span>
-                                <span>sustainability</span>
-                                <span>healthy lifestyle</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             </div>
-        </section>
-        <section class="section academic-section">
-            <div class="container">
-                <h2 class="section-title">Academic Profile</h2>
-                <div class="academic-grid">
-                    <div class="academic-card">
-                        <div class="academic-info">
-                            <div class="info-item">
-                                <h4>Course</h4>
-                                <p>Algorithmic Problem Solving (24ECAC203)</p>
-                            </div>
-                            <div class="info-item">
-                                <h4>University</h4>
-                                <p>KLE Technological University</p>
-                            </div>
-                            <div class="info-item">
-                                <h4>Instructor</h4>
-                                <p>K M M Rajashekharaiah sir</p>
-                            </div>
-                            <div class="info-item">
-                                <h4>SRN</h4>
-                                <p>01fe23bci050</p>
-                            </div>
-                            <div class="info-item">
-                                <h4>Portfolio Domain</h4>
-                                <p>Google</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+/* Navigation */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
-        <section id="contact" class="section contact-section">
-            <div class="container">
-                <h2 class="section-title">Connect With Me</h2>
-                <div class="social-links">
-                    <a href="https://github.com/Siddarthgaikwad" target="_blank" class="social-btn">GitHub</a>
-                    <a href="https://www.linkedin.com/in/siddarth-gaikwad-169455273" target="_blank" class="social-btn">LinkedIn</a>
-                </div>
-            </div>
-        </section>
-    </main>
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
 
-    <footer>
-        <div class="container">
-            <blockquote class="inspiration-quote">
-                "The only way to do great work is to love what you do." – Steve Jobs
-            </blockquote>
-        </div>
-    </footer>
-</body>
-</html>
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0066cc;
+}
+
+/* Hero Section */
+.hero {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s;
+}
+
+.primary-btn {
+    background-color: #0066cc;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #0066cc;
+    border: 2px solid #0066cc;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    transform: translateY(-2px);
+}
+
+.profile-placeholder {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+/* Projects Section */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-tags span {
+    background-color: #e9ecef;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skill-card h3 {
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+/* Academic Section */
+.academic-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.academic-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-item h4 {
+    color: #0066cc;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-btn {
+    padding: 0.8rem 2rem;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.inspiration-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
