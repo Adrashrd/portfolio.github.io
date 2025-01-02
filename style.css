@@ -187,6 +187,41 @@ body {
     font-size: 0.9rem;
     color: var(--secondary-color);
 }
+/* Style for the brown box */
+.brown-box {
+  background-color: #8B4513; /* Brown color */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Style for the reflection buttons */
+.reflection-button {
+  background-color: #D2B48C; /* Lighter brown color for buttons */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make buttons fill the box width */
+}
+
+/* Hover effect for the buttons */
+.reflection-button:hover {
+  background-color: #A0522D; /* Darker brown when hovered */
+}
+
+.reflection-button h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
 
 /* Reflections Section */
 .reflections-grid {
