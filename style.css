@@ -187,72 +187,6 @@ body {
     font-size: 0.9rem;
     color: var(--secondary-color);
 }
-/* Style for the brown box */
-.brown-box {
-  background-color: #8B4513; /* Brown color */
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-/* Style for the reflection buttons */
-.reflection-button {
-  background-color: #D2B48C; /* Lighter brown color for buttons */
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
-  width: 100%; /* Make buttons fill the box width */
-}
-
-/* Hover effect for the buttons */
-.reflection-button:hover {
-  background-color: #A0522D; /* Darker brown when hovered */
-}
-
-.reflection-button h3 {
-  margin: 0;
-  font-size: 16px;
-}
-
-
-/* Reflections Section */
-.reflections-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.reflection-button {
-    background: var(--secondary-color);
-    padding: 2rem 4rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.reflection-button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    background: var(--brown-gradient-dark);
-}
-
-.reflection-button h3 {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0;
-}
 
 /* Skills */
 .skills-grid {
@@ -274,4 +208,138 @@ body {
     color: var(--secondary-color);
 }
 
-.skill-
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card ul li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skill-card ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* Academic Section */
+.academic-card {
+    background: var(--card-background);
+    padding: var(--spacing-md);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(139, 94, 52, 0.1);
+}
+
+.academic-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.info-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+/* Reflections Section Styles */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: #0066cc;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.member-info h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* Contact Section */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.social-btn {
+    padding: 12px 30px;
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    background: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-lg);
+}
+
+.inspiration-quote {
+    text-align: center;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--accent-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .academic-info {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+    animation: fadeIn 1s ease-out;
+}
